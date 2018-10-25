@@ -1,0 +1,96 @@
+body {
+    height: 100vw;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-color: transparent;
+  }
+  
+  .banner {
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    
+  }
+  
+  .banner-title {
+    position: absolute;
+    top: 45%;
+    left:20%;
+    font-size: 5em;
+    font-weight: bold;
+    color: rgba(255,255,255,.9)
+  }
+  .banner-subtitle {
+    position: absolute;
+    text-transform: uppercase;
+    top: 60%;
+    left: 35%;
+    font-size: 2.5em;
+    color: rgba(255,255,255,.7)
+  }
+  
+  .skills {
+    background-color: rgba(0,0,0,.5);
+    padding: 5em 0;
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-family: "Trebuchet MS1", "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    border-bottom: 3px solid rgba(255,255,255,.9);
+    color: rgba(255,255,255,.9);
+    padding-bottom: 40px;
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  .icon-container {
+    padding: 0 3em;
+    margin: 5em 0;
+  }
+  
+  .devicon-git-plain {
+    max-width: 12em;
+    margin: 1em 1em;
+  }
+  .devicon-git-plain:hover {
+    position: relative;
+    -ms-transform: translate(0, -2em); /* IE 9 */
+    -webkit-transform: translate(0, -2em); /* Safari */
+    transform: translate(0, -2em);
+    transition-duration: .2s;
+  }
+  .devicon-git-plain path {
+    fill: rgba(255,255,255,.9);
+  }
+  .devicon-git-plain path:hover {
+    fill: rgba(255,255,255,1);
+    position: relative;
+    top: -2em;
+  }
+  
+  .construction {
+    background-color: rgba(255,255,255,.05);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .construction span {
+    color: rgba(255,255,255,.9);
+    font-family: "arial", sans-serif;
+    font-weight: bold;
+    font-size: 6vh;
+  
+  }
+  
+  footer {
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font-size: 1em;
+    color: rgba(255,255,255,.9);
+    padding: 10px 0;
+  }
