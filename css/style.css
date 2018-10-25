@@ -1,13 +1,12 @@
 
 body {
     background-image: url("../img/bg.jpg");
-    background-repeat: no-repeat;
     background-position: center top;
-    background-color: transparent;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
   
@@ -97,7 +96,6 @@ body {
     color: rgba(255,255,255,.9);
     padding: 10px 0;
   }
-
 
 /*
   @media all and (max-width: 800px) {
