@@ -2,10 +2,6 @@
 body {
     background-image: url("../img/bg.jpg");
     background-position: center top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -97,10 +93,13 @@ body {
     padding: 10px 0;
   }
 
-/*
-  @media all and (max-width: 800px) {
+
+  @media all and (min-width: 500px) {
     body {
-      background-image: url("../img/bg-sm.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
   }
-  */
+  
