@@ -9,10 +9,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
   }
   
   .banner {
@@ -101,3 +97,14 @@ body {
     color: rgba(255,255,255,.9);
     padding: 10px 0;
   }
+
+/* Resolve background issue for Apple non-mobile devices */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+     .body { background-attachment: scroll !important; }
+}
+/* Resolve background issue for Apple mobile devices */
+@media handheld, only screen and (max-width: 668px) {
+     .body { background-attachment: scroll !important; }
+}
