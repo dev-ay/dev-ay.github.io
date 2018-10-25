@@ -1,6 +1,13 @@
+html {
+    width: 100vw;
+    height:100vh;
+}
 body {
     height: 100vw;
     background-image: url("../img/bg.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
