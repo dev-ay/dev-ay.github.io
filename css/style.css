@@ -2,6 +2,10 @@
 body {
     background-image: url("../img/bg.jpg");
     background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
@@ -94,12 +98,3 @@ body {
   }
 
 
-  @media all and (min-width: 500px) {
-    body {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-  }
-  
