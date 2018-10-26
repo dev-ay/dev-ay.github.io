@@ -94,7 +94,7 @@ body {
   }
 
 
-  @media all and (min-width: 300px) {
+  @media all and (min-width: 1000px) {
     body {
         -webkit-background-size: cover;
         -moz-background-size: cover;
