@@ -1,0 +1,170 @@
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /*margin-bottom: 90vh;*/
+}
+
+.title{
+    margin: 5em auto 0px;
+    padding: 3em;
+    background-color: rgba(255,173,53,.7);
+    text-align: center;
+    /*border-radius: 1em;*/
+    /*box-shadow: 5px 5px 3px rgba(100,100,100,.5);
+    /*text-shadow: 0 0 3px #FF0000;*/
+}
+
+.title h1 {
+    //font-family: 'Over the Rainbow', cursive;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 6em;
+    text-shadow: 0 0 3px #000;
+    color: white;/*rgb(161,43,0);*/
+}
+
+.title h6 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    margin-top: 30px
+}
+
+input {
+    margin-right: 1em;
+}
+
+input[type=radio] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+}
+
+.card-deck {
+    background-color: transparent;
+}
+
+.card-header {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255,173,53,.7);
+    border-radius: 10px 10px 0px 0px !important;
+}
+
+.card {
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+}
+
+.singleCard {
+    min-width: 300px; 
+    max-width: 500px; 
+    margin-top: 2em;
+    border-radius: 50px;
+}
+
+.card-body {
+    background-color: rgba(255,255,255,.9);
+    font-size:1.15em;
+    padding-left:30px;
+}
+
+.card-footer {
+    color: black;
+    background-color: rgba(219,229,237,.8);
+    text-align: right;
+    padding-right: 10%;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.card-footer h5 {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 1em;
+}
+
+td:nth-child(odd) {
+    //background-color: blue;
+    padding-right: 2em;
+}
+
+td:nth-child(even) {
+    //background-color: red;
+    text-align: right;
+    padding-right: 1em;
+    width: 5em;
+    border-left: 1px solid rgba(255,173,53,1);
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+    padding-left: 7%;
+}
+
+
+.finalTotal {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.note {
+    font-style: italic;
+    color: grey;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    margin: 0px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#receipt {
+    margin: 0 auto; 
+    margin-bottom: 20vh; 
+    opacity: 0;
+}
+
+em {
+    color: grey;
+}
+
+/* Shrink title text on smaller screens*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .title h1 {
+        font-size: 5em;
+    }
+    
+    .title h6 {
+        font-size: 1.7em;
+    }
+}

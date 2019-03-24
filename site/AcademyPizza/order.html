@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Primar CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|La+Belle+Aurore|Over+the+Rainbow" rel="stylesheet">
+
+        <title>Academy Pizza | Place Your Order</title>
+    </head>
+
+    <body>
+        <!--Main Title Display-->
+        <div class="title col-md-9">
+            <h1>Academy Pizza</h1>
+            <h6>Place your order below</h6>
+        </div>
+        <!--/Main Title Display-->
+
+        <form id="mainForm">
+            <div class="card-deck col-md-9" style="margin: 5em auto;">
+                <!--Size-->
+                <div class="card singleCard rounded-0 border-0">
+                    <div class="card-header text-white rounded-0">
+                        Size:
+                    </div>
+                    <div class="card-body">
+                        <fieldset>
+                            <input onclick="setSize()" type="radio" name="size" value="Personal">Personal ($6)<br>
+                            <input onclick="setSize()" type="radio" name="size" value="Medium">Medium ($10)<br>
+                            <input onclick="setSize()" type="radio" name="size" value="Large" checked>Large ($14)<br>
+                            <input onclick="setSize()" type="radio" name="size" value="Extra Large">Extra Large ($16)<br>
+                        </fieldset>
+                    </div>
+                    <div class="card-footer">
+                        <h5 id="sizeTotal">+ $14</h5>
+                    </div>
+                </div>
+                <!--/Size-->
+    
+                <!--Meat-->
+                <div class="card singleCard rounded-0 border-0">
+                        <div class="card-header text-white rounded-0">
+                            Meat:
+                        </div>
+                        <div class="card-body">
+                            <fieldset>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Pepperoni">Pepperoni<br>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Sausage">Sausage<br>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Canadian Bacon">Canadian Bacon<br>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Ground Beef">Ground Beef<br>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Anchovy">Anchovy<br>
+                                <input onclick="setMeat()" type="checkbox" name="meat" value="Chicken">Chicken<br>
+                            </fieldset>
+                            <div class="note">1st free, $1 each additional</div>
+                        </div>
+                        <div class="card-footer">
+                            <h5 id="meatTotal">+ $0</h5>
+                        </div>
+                </div>
+                <!--/Meat-->
+    
+                <!--Cheese-->
+                <div class="card singleCard rounded-0 border-0">
+                        <div class="card-header text-white rounded-0">
+                            Cheese:
+                        </div>
+                        <div class="card-body">
+                            <fieldset>
+                                <input onclick="setCheese()" type="radio" name="cheese" value="Regular" checked>Regular<br>
+                                <input onclick="setCheese()" type="radio" name="cheese" value="No Cheese">No Cheese<br>
+                                <input onclick="setCheese()" type="radio" name="cheese" value="Extra Cheese" >Extra Cheese (+$3)<br>
+                            </fieldset>
+                        </div>
+                        <div class="card-footer">
+                            <h5 id="cheeseTotal">+ $0</h5>
+                        </div>
+                </div>    
+                <!--/Cheese-->
+    
+                <!--Crust-->
+                <div class="card singleCard rounded-0 border-0">
+                        <div class="card-header text-white rounded-0">
+                            Crust:
+                        </div>
+                        <div class="card-body">
+                            <fieldset>
+                                <input onclick="setCrust()" type="radio" name="crust" value="Plain" checked>Plain Crust<br>
+                                <input onclick="setCrust()" type="radio" name="crust" value="Garlic Butter">Garlic Butter Crust<br>
+                                <input onclick="setCrust()" type="radio" name="crust" value="Cheese Stuffed" >Cheese Stuffed Crust (+$3)<br>
+                                <input onclick="setCrust()" type="radio" name="crust" value="Spicy">Spicy Crust<br>
+                                <input onclick="setCrust()" type="radio" name="crust" value="House Special" >House Special Crust<br>
+                            </fieldset>
+                        </div>
+                        <div class="card-footer">
+                            <h5 id="crustTotal">+ $0</h5>
+                        </div>
+                </div>       
+                <!--/Crust-->
+    
+                <!--Sauce-->
+                <div class="card singleCard rounded-0 border-0">
+                        <div class="card-header text-white rounded-0">
+                            Sauce:
+                        </div>
+                        <div class="card-body">
+                            <fieldset>
+                                <input onclick="setSauce()" type="radio" name="sauce" value="Marinara" checked>Marinara Sauce<br>
+                                <input onclick="setSauce()" type="radio" name="sauce" value="White">White Sauce<br>
+                                <input onclick="setSauce()" type="radio" name="sauce" value="Barbeque" >Barbeque Sauce<br>
+                                <input onclick="setSauce()" type="radio" name="sauce" value="No" >No Sauce<br>
+                            </fieldset>
+                        </div>
+                        <div class="card-footer">
+                            <h5 id="sauceTotal">+ $0</h5>
+                        </div>
+                </div>       
+                <!--/Sauce-->
+    
+                <!--Veggies-->
+                <div class="card singleCard rounded-0 border-0">
+                        <div class="card-header text-white rounded-0">
+                            Veggies:
+                        </div>
+                        <div class="card-body">
+                            <fieldset>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Tomatoes">Tomatoes<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Onions">Onions<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Olives">Olives<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Green Peppers">Green Peppers<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Mushrooms">Mushrooms<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Pineapple">Pineapple<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Spinach">Spinach<br>
+                                <input onclick="setVeggies()" type="checkbox" name="veggies" value="Jalapeno">Jalapeno<br>
+                            </fieldset>
+                            <div class="note">1st free, $1 each additional</div>
+                        </div>
+                        <div class="card-footer">
+                            <h5 id="veggiesTotal">+ $0</h5>
+                        </div>
+                </div>       
+                <!--/Veggies-->
+
+            </div>
+            
+            <!--/Buttons ("Place Order" and "Reset")-->
+            <div class="col-md-6" style="margin:0px auto;">
+                <div style="margin-top: 50px; margin-bottom: 80px;">
+                    <button onclick="startOver()" type="button" class="btn btn-info btn-lg btn-block">Reset</button>
+                    <button onclick="order()" type="button" class="btn btn-success btn-lg btn-block">Place Order</button>
+                </div>                 
+            </div>
+            <!--/Buttons ("Place Order" and "Reset")-->
+
+            <!--/Total (Receipt Section)-->
+            <div class="card-deck col-md-6" id="receipt">
+                <div class="card totalCard rounded-0 border-0">
+                    <div class="card-header text-white rounded-0">
+                        <h2 class="finalTotal">Your Total:</h2>
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <tr>
+                                <td><strong>Size:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="sizeA">Large Pizza</td>
+                                <td id="sizeB">$14.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Meat:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="meatA"><em>none</em></td>
+                                <td id="meatB">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cheese:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="cheeseA">Regular</td>
+                                <td id="cheeseB">$0.00</td>
+                            </tr> 
+                            <tr>
+                                <td><strong>Crust:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="crustA">Plain Crust</td>
+                                <td id="crustB">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sauce:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="sauceA">Marinara Sauce</td>
+                                <td id="sauceB">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Veggies:</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id="veggiesA"><em>none</em></td>
+                                <td id="veggiesB">$0.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <h1 id="finalTotal" class="finalTotal" style="color:black;">$14.00</h1>
+                    </div>
+                </div> 
+
+                
+            </div>
+
+            <!--/Total (Receipt Section)-->
+
+
+
+        </form>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+
+
+    </body>
+</html>
