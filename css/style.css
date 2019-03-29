@@ -49,10 +49,17 @@ body {
     margin: 0 auto;
     width: 300px;
   }
+
+  .skills h6 {
+    border-bottom: 3px solid rgba(255,255,255,.9);
+    color: rgba(255,255,255,.9);
+    margin: 0 auto;
+    width: 100px;
+  }
   
   .icon-container {
     padding: 0 3em;
-    margin: 5em 0;
+    margin: 2em 0;
   }
   
   .devicon-git-plain {
