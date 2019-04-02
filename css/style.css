@@ -86,6 +86,7 @@ body {
     background-color: rgba(255,255,255,.05);
     width: 100%;
     text-align: center;
+    padding: 10em 0;
   }
   
   .construction span {
@@ -96,6 +97,52 @@ body {
   
   }
   
+  .devicon-git-plain-footer {
+    max-width: 5em;
+    margin: 0em 1em;
+    vertical-align: middle;
+
+  }
+
+  .devicon-git-plain-footer path {
+    fill: rgba(255,255,255,0.9);
+  }
+
+
+  button.repo {
+    border-style: solid;
+    border-color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 1em;
+    width: 400px;
+    padding: 10px;
+  }
+
+  repo, button:hover {
+    background-color: rgba(255,255,255,.3);
+  }
+
+  a.repo-link{
+    text-decoration: none;
+  }
+
+  span.repo-link {
+    /*font-family: "Arial Narrow", Helvetica, sans-serif;*/
+    font-weight: normal;
+    font-size: 2em;
+    vertical-align: middle;
+    color: rgba(255,255,255,0.9);
+
+  }
+
+  .repo-link:hover {
+    color: white;
+  }
+
+  .repo-link, a:hover {
+    color: rgba(255,255,255,1);
+  }
+
   footer {
     background-color: rgba(0,0,0,.7);
     text-align: center;
