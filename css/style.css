@@ -128,8 +128,9 @@ body {
 
   span.repo-link {
     /*font-family: "Arial Narrow", Helvetica, sans-serif;*/
-    font-weight: normal;
-    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 3em;
     vertical-align: middle;
     color: rgba(255,255,255,0.9);
 
